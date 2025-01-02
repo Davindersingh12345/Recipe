@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Cuisine</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #F4F1F6;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.5rem;
+            font-style: italic;
+            padding: 40px;
+            background-color: #E0A9F1;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+
+        .recipe-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .recipe-card {
+            background-color: white;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        .recipe-card-header {
+            background-color: #E0A9F1;
+            padding: 20px;
+            font-size: 2rem;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            text-align: center;
+        }
+
+        .recipe-content {
+            padding: 20px;
+            font-size: 1.2rem;
+        }
+
+        .ingredients {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .ingredients b {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .ingredients ul {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 1rem;
+        }
+
+        .ingredients li {
+            margin: 10px 0;
+        }
+
+        .recipe-text p {
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            margin-top: 20px;
+            background-color: #F44A5B;
+            color: white;
+            text-align: center;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #DD3C4A;
+        }
+
+        @media (max-width: 768px) {
+            .recipe-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1><b>Indian Cuisine</b></h1>
+
+    <div class="recipe-container">
+        
+        <!-- Palak Paneer -->
+        <div class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Palak Paneer</h2>
+            </div>
+            <img src="./palak-paneer.jpg" alt="Palak Paneer">
+            <div class="recipe-content">
+                <div class="ingredients">
+                    <b>Ingredients:</b>
+                    <ul>
+                        <li>500g fresh spinach leaves</li>
+                        <li>250g paneer (Indian cottage cheese), cubed</li>
+                        <li>1 small onion, chopped</li>
+                        <li>2-3 cloves garlic, minced</li>
+                        <li>1-inch piece of ginger, minced</li>
+                        <li>2-3 green chilies, chopped</li>
+                        <li>2 tablespoons vegetable oil</li>
+                        <li>1 teaspoon cumin seeds</li>
+                        <li>2 medium tomatoes, chopped</li>
+                        <li>1 teaspoon ground turmeric, coriander, garam masala</li>
+                        <li>1/2 teaspoon red chili powder</li>
+                        <li>Salt, to taste</li>
+                    </ul>
+                </div>
+                <div class="recipe-text">
+                    <b>Recipe:</b>
+                    <p>Blanch spinach leaves, then blend with onion, garlic, ginger, and green chilies to make a puree. Fry paneer cubes until golden brown. Set aside.</p>
+                    <p>In a pot, heat oil and add cumin seeds. Sauté chopped onions until translucent. Add chopped tomatoes, cook until mushy, then add spices (turmeric, coriander, garam masala, red chili powder, salt).</p>
+                    <p>Pour in spinach puree, simmer for 5-7 minutes. Add fried paneer cubes, mix gently, and simmer for a few more minutes. Adjust seasoning if needed.</p>
+                    <p>Serve hot with naan, roti, or rice.</p>
+                    <a href="#" class="btn">See Full Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dal Makhni -->
+        <div class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Dal Makhni</h2>
+            </div>
+            <img src="./Dal-Makhani.jpg" alt="Dal Makhni">
+            <div class="recipe-content">
+                <div class="ingredients">
+                    <b>Ingredients:</b>
+                    <ul>
+                        <li>1 cup whole black lentils (urad dal)</li>
+                        <li>1/4 cup kidney beans (rajma)</li>
+                        <li>Salt to taste</li>
+                        <li>2 tbsp ghee or butter</li>
+                        <li>1 tbsp oil</li>
+                        <li>1 tsp cumin seeds</li>
+                        <li>1 large onion, finely chopped</li>
+                        <li>1 tbsp ginger-garlic paste</li>
+                        <li>2 green chilies, slit lengthwise</li>
+                        <li>2 medium tomatoes, finely chopped</li>
+                        <li>1 tsp red chili powder, turmeric powder</li>
+                        <li>1 tbsp coriander powder</li>
+                        <li>1 tsp garam masala</li>
+                        <li>1/4 cup cream</li>
+                        <li>2 tbsp chopped coriander leaves</li>
+                    </ul>
+                </div>
+                <div class="recipe-text">
+                    <b>Recipe:</b>
+                    <p>Soak lentils and beans for 6 hours or overnight, then pressure cook with salt until soft. In a pan, heat ghee and oil. Add cumin seeds, onions, ginger-garlic paste, green chilies, and sauté till golden.</p>
+                    <p>Add tomatoes, cook till soft. Add spices and cook for a minute. Add cooked lentils and beans with water. Simmer for 15-20 minutes.</p>
+                    <p>Mash some lentils, add cream, and simmer for another 5-10 minutes. Garnish with coriander leaves and serve hot.</p>
+                    <a href="#" class="btn">See Full Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Biryani -->
+        <div class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Biryani</h2>
+            </div>
+            <img src="./biriyani.jpg" alt="Biryani">
+            <div class="recipe-content">
+                <div class="ingredients">
+                    <b>Ingredients:</b>
+                    <ul>
+                        <li>500g chicken</li>
+                        <li>1 cup yogurt</li>
+                        <li>Spices for marination (ginger-garlic paste, red chili powder, turmeric powder, garam masala)</li>
+                        <li>Salt</li>
+                        <li>Fresh coriander and mint leaves</li>
+                        <li>2 cups basmati rice</li>
+                        <li>Whole spices (bay leaves, cloves, cardamom, cinnamon)</li>
+                        <li>2 large onions</li>
+                        <li>Green chilies</li>
+                        <li>Ghee or oil</li>
+                        <li>Saffron (optional)</li>
+                        <li>Cashews and raisins for garnish (optional)</li>
+                    </ul>
+                </div>
+                <div class="recipe-text">
+                    <b>Recipe:</b>
+                    <p>Marinate chicken with yogurt, spices, and herbs. Cook soaked rice with whole spices until 70-80% done. Fry onions until golden brown.</p>
+                    <p>Cook marinated chicken with onions and chilies. Layer partially cooked rice over chicken, add remaining fried onions, herbs, and saffron.</p>
+                    <p>Cook covered on low heat for 20-25 minutes. Garnish with fried cashews and raisins. Serve hot with raita or salan.</p>
+                    <a href="#" class="btn">See Full Recipe</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Masala Dosa -->
+        <div class="recipe-card">
+            <div class="recipe-card-header">
+                <h2>Masala Dosa</h2>
+            </div>
+            <img src="./Masala-Dosa.webp" alt="Masala Dosa">
+            <div class="recipe-content">
+                <div class="ingredients">
+                    <b>Ingredients:</b>
+                    <ul>
+                        <li>2 cups rice</li>
+                        <li>1 cup urad dal (split black gram)</li>
+                        <li>1/2 tsp fenugreek seeds</li>
+                        <li>Salt to taste</li>
+                        <li>For filling: 3 large potatoes, boiled and mashed</li>
+                        <li>1 onion, sliced</li>
+                        <li>1 green chili, chopped</li>
+                        <li>1 tsp mustard seeds</li>
+                        <li>1 tsp turmeric powder</li>
+                        <li>Fresh coriander leaves</li>
+                    </ul>
+                </div>
+                <div class="recipe-text">
+                    <b>Recipe:</b>
+                    <p>Soak rice, urad dal, and fenugreek overnight, then grind into a smooth batter. Let it ferment for 12-24 hours.</p>
+                    <p>For the filling, heat oil, add mustard seeds, then onions and green chilies. Add turmeric, mashed potatoes, and fresh coriander. Cook briefly.</p>
+                    <p>Heat a dosa pan, pour a ladle of batter, spread it thinly, cook until crispy, then add the potato filling and fold. Serve hot with chutney.</p>
+                    <a href="#" class="btn">See Full Recipe</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

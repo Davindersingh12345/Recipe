@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexican Cuisine</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: rgb(145, 143, 248);
+            font-size: 60px;
+            font-style: italic;
+            margin: 0;
+            padding: 20px;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .dish {
+            background-color: rgb(255, 255, 255);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            margin: 20px;
+            padding: 15px;
+            box-sizing: border-box;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .dish:hover {
+            transform: translateY(-10px);
+        }
+
+        .dish img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .s {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .dish h2 {
+            font-size: 24px;
+            color: rgb(138, 127, 239);
+        }
+
+        @media (max-width: 768px) {
+            .dish {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1><b>Mexican Cuisine</b></h1>
+
+    <div class="container">
+        <!-- Dish 1: Tacos Al Pastor -->
+        <div class="dish">
+            <h2>Tacos Al Pastor</h2>
+            <img src="./takos-al-pastor.jpg" alt="Tacos Al Pastor">
+            <p><b><span class="s">Ingredients:</span></b><br><br>
+                2 dried guajillo chilies<br>
+                2 dried ancho chilies<br>
+                Garlic, onion<br>
+                Pineapple juice<br>
+                White vinegar<br>
+                Achiote paste<br>
+                Spices (oregano, cumin, paprika, cinnamon)<br>
+                Salt<br>
+                Pork shoulder<br>
+                Corn tortillas<br>
+                Pineapple slices<br>
+                Cilantro<br>
+                White onion<br>
+                Lime wedges<br><br>
+
+                <b><span class="s">Recipe:</span></b><br><br>
+                Soak and blend chilies with garlic, onion, pineapple juice, vinegar, achiote paste, spices, and salt.<br>
+                Marinate thinly sliced pork in the mixture for at least 2 hours.<br>
+                Grill pork slices until charred and cooked through.<br>
+                Warm corn tortillas and fill with grilled pork, pineapple slices, cilantro, and diced onion.<br>
+                Serve with lime wedges.
+            </p>
+        </div>
+
+        <!-- Dish 2: Mole Poblano -->
+        <div class="dish">
+            <h2>Mole Poblano</h2>
+            <img src="./mole.jpeg" alt="Mole Poblano">
+            <p><b><span class="s">Ingredients:</span></b><br><br>
+                Dried ancho, guajillo, and pasilla chilies<br>
+                Sesame seeds, almonds, raisins, pumpkin seeds<br>
+                Vegetable oil<br>
+                Onion, garlic<br>
+                Masa harina<br>
+                Ground cloves, cinnamon, cumin, oregano<br>
+                Chicken broth<br>
+                Mexican chocolate<br>
+                Salt, sugar (optional)<br><br>
+
+                <b><span class="s">Recipe:</span></b><br><br>
+                Toast chilies, seeds, nuts, and raisins.<br>
+                Sauté onion and garlic, then blend with toasted ingredients, masa harina, spices, and chicken broth until smooth.<br>
+                Simmer with Mexican chocolate until thickened. Adjust seasoning and consistency.<br><br>
+
+                For Chicken:<br>
+                Chicken thighs<br>
+                Salt, pepper<br>
+                Vegetable oil for frying<br><br>
+
+                Instructions for Chicken:<br>
+                Season chicken thighs and fry until golden and cooked through.<br><br>
+
+                Serve Mole Poblano:<br>
+                Spoon sauce over cooked rice and crispy chicken thighs.<br>
+                Garnish with sesame seeds and cilantro.
+            </p>
+        </div>
+
+        <!-- Dish 3: Chiles Rellenos -->
+        <div class="dish">
+            <h2>Chiles Rellenos</h2>
+            <img src="./chile-rellenos.jpg" alt="Chiles Rellenos">
+            <p><b><span class="s">Ingredients:</span></b><br><br>
+                4 large poblano peppers<br>
+                Vegetable oil<br>
+                1/2 onion, minced<br>
+                2 cloves garlic, minced<br>
+                1 cup cooked and shredded chicken or beef (optional)<br>
+                1 cup cooked rice<br>
+                1 cup shredded cheese<br>
+                Salt and pepper<br>
+                3 large eggs, separated<br>
+                1/4 cup all-purpose flour<br>
+                1/4 teaspoon baking powder<br>
+                Tomato sauce or salsa<br>
+                Crema or yogurt<br>
+                Fresh cilantro leaves<br><br>
+
+                <b><span class="s">Recipe:</span></b><br><br>
+                Char poblano peppers, remove skin, seeds, and membranes.<br>
+                Sauté onion and garlic, add meat (if using), rice, cheese, salt, and pepper for filling.<br>
+                Stuff peppers with filling mixture.<br>
+                Beat egg whites until stiff peaks form.<br>
+                Mix egg yolks, flour, baking powder, and salt.<br>
+                Fold egg whites into yolk mixture.<br>
+                Dip stuffed peppers in batter, fry until golden brown.<br>
+                Serve hot with tomato sauce, crema or yogurt, and cilantro.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

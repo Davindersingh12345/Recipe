@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Cuisine</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: rgb(248, 143, 143);
+            font-size: 60px;
+            font-style: italic;
+            margin: 0;
+            padding: 20px;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .dish {
+            background-color: rgb(255, 255, 255);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            margin: 20px;
+            padding: 15px;
+            box-sizing: border-box;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .dish:hover {
+            transform: translateY(-10px);
+        }
+
+        .dish img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .s {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .dish h2 {
+            font-size: 24px;
+            color: rgb(138, 127, 239);
+        }
+
+        @media (max-width: 768px) {
+            .dish {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1><b>Chinese Cuisine</b></h1>
+
+    <div class="container">
+        <!-- Dish 1: Kung Pao Chicken -->
+        <div class="dish">
+            <h2>Kung Pao Chicken</h2>
+            <img src="./Kung-Pao-Chicken.webp" alt="Kung Pao Chicken">
+            <p><b><span class="s">Ingredients:</span></b><br><br>
+                400g boneless, skinless chicken breasts (cut into bite-sized pieces)<br>
+                Soy sauce, Shaoxing wine (or dry sherry), cornstarch<br>
+                Vegetable oil<br>
+                Dried red chilies, garlic, ginger<br>
+                Roasted peanuts<br>
+                Green onions<br>
+                Salt<br>
+                For the sauce:<br>
+                Soy sauce, hoisin sauce, rice vinegar, sugar, sesame oil<br><br>
+
+                <b><span class="s">Recipe:</span></b><br><br>
+                Marinate chicken in soy sauce, wine, and cornstarch.<br>
+                Stir-fry dried red chilies in hot oil.<br>
+                Add chicken, cook until browned.<br>
+                Add garlic, ginger, stir.<br>
+                Pour in sauce, mix with chicken.<br>
+                Add peanuts, toss.<br>
+                Cook until sauce thickens.<br>
+                Season with salt.<br>
+                Garnish with green onions.<br>
+                Serve with rice.
+            </p>
+        </div>
+
+        <!-- Dish 2: Mapo Tofu -->
+        <div class="dish">
+            <h2>Mapo Tofu</h2>
+            <img src="./mapotofu.jpg" alt="Mapo Tofu">
+            <p><b><span class="s">Ingredients:</span></b><br><br>
+                400g soft tofu<br>
+                150g ground pork (optional)<br>
+                Vegetable oil<br>
+                Doubanjiang (broad bean paste)<br>
+                Garlic, ginger, green onions<br>
+                Fermented black beans (optional)<br>
+                Soy sauce, sugar<br>
+                Chicken or vegetable broth<br>
+                Cornstarch<br>
+                Salt<br>
+                Sichuan peppercorn powder (optional)<br>
+                Chopped green onions (for garnish)<br><br>
+
+                <b><span class="s">Recipe:</span></b><br><br>
+                Sauté garlic, ginger, and green onions in vegetable oil.<br>
+                Add doubanjiang and stir.<br>
+                Add ground pork (if using) and cook until browned.<br>
+                Stir in fermented black beans (if using), soy sauce, sugar, and broth.<br>
+                Gently add tofu cubes and simmer.<br>
+                Thicken with cornstarch slurry.<br>
+                Season with salt.<br>
+                Garnish with Sichuan peppercorn powder and green onions.<br>
+                Serve hot with rice.
+            </p>
+        </div>
+
+        <!-- Dish 3: Peking Duck -->
+        <div class="dish">
+            <h2>Peking Duck</h2>
+            <img src="./peking.jpeg" alt="Peking Duck">
+            <p><b><span class="s">Ingredients:</span></b><br><br>
+                1 whole duck (about 5-6 pounds)<br>
+                Maltose or honey<br>
+                Chinese rice wine or dry sherry<br>
+                Soy sauce<br>
+                Five-spice powder<br>
+                Salt<br>
+                White vinegar<br>
+                Baking powder<br>
+                Mandarin pancakes<br>
+                Hoisin sauce<br>
+                Thinly sliced cucumbers<br>
+                Thinly sliced scallions<br><br>
+
+                <b><span class="s">Recipe:</span></b><br><br>
+                Clean and dry the duck, then marinate it in a mixture of maltose, rice wine, soy sauce, five-spice powder, salt, vinegar, and baking powder.<br>
+                Roast the duck in the oven until the skin is crispy and golden brown.<br>
+                Let the duck rest, then slice it thinly.<br>
+                Serve the sliced duck with Mandarin pancakes, hoisin sauce, cucumbers, and scallions.<br>
+                Assemble the pancakes with a bit of hoisin sauce, duck slices, cucumber, and scallions, then roll them up and enjoy!
+            </p>
+        </div>
+
+        <!-- Dish 4: Dim Sum -->
+        <div class="dish">
+            <h2>Dim Sum</h2>
+            <img src="./dim sum.jpeg" alt="Dim Sum">
+            <p><b><span class="s">Ingredients:</span></b><br><br>
+                250g ground pork<br>
+                150g shrimp, chopped<br>
+                Soy sauce, oyster sauce, sesame oil, cornstarch, sugar<br>
+                Grated ginger, grated garlic<br>
+                Water chestnuts or bamboo shoots, chopped<br>
+                Green onions<br>
+                Round dumpling wrappers<br><br>
+
+                <b><span class="s">Recipe:</span></b><br><br>
+                Mix pork, shrimp, sauces, oils, cornstarch, sugar, ginger, garlic, water chestnuts, and green onions.<br>
+                Fill wrappers with mixture, pleating the edges.<br>
+                Steam dumplings for 8-10 minutes.<br>
+                Serve hot with soy sauce.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
